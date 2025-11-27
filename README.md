@@ -68,7 +68,7 @@ The application displaying the default city **Toronto, CA** with current weather
 ### 3. Error Handling Display
 Demonstrating the application's error handling when an invalid city name is entered. The app displays a user-friendly error message: **"City not found. Please try again."** in a red notification box.
 
-![Error Handling](NewYork.png)
+![Home Page - Toronto](Home.png)
 
 **Error Handling Features:**
 - Clear error message
@@ -242,103 +242,6 @@ Testing the API with **Paris** showing successful weather data retrieval with ov
 
 ---
 
-## Components Overview
-
-### 1. Weather.js
-**Main component responsible for:**
-- Managing application state (weatherData, city, loading, error)
-- Fetching weather data from OpenWeatherMap API using Axios
-- Handling API responses and errors
-- Using React Hooks (useState, useEffect)
-- Displaying weather information in a structured layout
-- Passing search handler to SearchBar component via props
-
-**Key Features:**
-- Initial data fetch on component mount (useEffect)
-- Dynamic weather icon display
-- Temperature conversion and rounding
-- Detailed weather metrics display
-- Loading states for better UX
-
-### 2. SearchBar.js
-**Search input component responsible for:**
-- Handling user input for city names
-- Form validation and submission
-- Passing search queries to parent component
-- Clearing input after successful search
-
-**Key Features:**
-- Controlled input component
-- Form submission with preventDefault
-- Input validation (non-empty check)
-- Clean, accessible UI
-
-### 3. Weather.css
-**Styling file providing:**
-- Responsive design for all screen sizes
-- Modern gradient background (purple theme)
-- Card-based layout
-- Grid system for weather details
-- Hover effects and transitions
-- Mobile-first approach
-
----
-
-## API Integration Details
-
-### Endpoint Structure
-```
-https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
-```
-
-### Query Parameters
-- `q` - City name (e.g., Toronto, London, Paris)
-- `appid` - Your API key
-- `units` - metric (for Celsius), imperial (for Fahrenheit)
-
-### Response Data Used
-- `name` - City name
-- `sys.country` - Country code
-- `main.temp` - Current temperature
-- `main.feels_like` - Feels like temperature
-- `main.humidity` - Humidity percentage
-- `main.pressure` - Atmospheric pressure (hPa)
-- `wind.speed` - Wind speed (m/s)
-- `weather[0].description` - Weather condition
-- `weather[0].icon` - Weather icon code
-
----
-
-## Features Implemented
-
-### ✅ Core Requirements (100%)
-- [x] React application with proper naming: `101504303_comp3123_labtest2`
-- [x] API integration with OpenWeatherMap
-- [x] Search functionality for multiple cities
-- [x] Display of all weather information (temp, humidity, wind, pressure)
-- [x] Weather icons from OpenWeatherMap
-- [x] Responsive UI/UX design with purple gradient theme
-- [x] Props usage for component communication
-- [x] State management with useState hook
-- [x] Lifecycle management with useEffect hook
-- [x] Error handling for invalid cities
-- [x] Loading states during API calls
-- [x] GitHub repository with commit history
-- [x] Deployed on Vercel
-- [x] Complete README with screenshots
-- [x] Postman API testing documented
-
-### 🎨 Design Features
-- Modern purple gradient background
-- Clean white card layout
-- Smooth transitions and hover effects
-- Mobile-responsive grid system
-- Professional typography
-- Accessible color contrast
-- Weather icon integration from OpenWeatherMap
-
----
-
 ## Testing
 
 ### Cities Tested Successfully:
@@ -374,61 +277,6 @@ https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=m
 
 ---
 
-## Development Notes
-
-- Local development runs on port **3002**
-- API calls use **HTTPS** protocol (not HTTP)
-- Temperature displayed in **Celsius** (metric units)
-- Default city on load: **Toronto**
-- Weather icons sourced from: `https://openweathermap.org/img/wn/{icon}@2x.png`
-
----
-
-## Challenges & Solutions
-
-### Challenge 1: Mixed Content Error
-**Problem:** API calls using `http://` blocked on deployed site  
-**Solution:** Changed all endpoints to `https://`
-
-### Challenge 2: Error Handling
-**Problem:** App crashed on invalid city names  
-**Solution:** Implemented try-catch blocks and error state
-
-### Challenge 3: Weather Icon Display
-**Problem:** Icons not loading initially  
-**Solution:** Used correct OpenWeatherMap icon URL format
-
----
-
-## Future Enhancements
-
-- [ ] 5-day weather forecast
-- [ ] Geolocation to auto-detect user city
-- [ ] Weather history tracking
-- [ ] Dark mode toggle
-- [ ] Multiple language support
-- [ ] Temperature unit toggle (°C/°F)
-- [ ] Weather alerts
-- [ ] Favorite cities list
-- [ ] Weather maps integration
-
----
-
-## Assignment Rubric Compliance
-
-| Requirement | Points | Status |
-|------------|--------|--------|
-| React app with correct naming | 5 | ✅ Complete |
-| Icons/images/theme/fonts | 10 | ✅ Complete |
-| UI/UX based on API response | 30 | ✅ Complete |
-| Search/dynamic content | 10 | ✅ Complete |
-| Display relevant information | 20 | ✅ Complete |
-| README with screenshots | 10 | ✅ Complete |
-| Hosting on Vercel | 15 | ✅ Complete |
-| **Total** | **100** | **✅ 100%** |
-
----
-
 ## Author
 
 **Uzma Shaikh**  
@@ -438,27 +286,19 @@ COMP3123 - Full Stack Development I
 
 ---
 
-## Acknowledgments
-
-- **OpenWeatherMap** for providing the free weather API
-- **Professor Pritesh Patel** for course guidance and assignment structure
-- **George Brown College** for educational resources
-- **Vercel** for free deployment platform
-- **React Team** for comprehensive documentation
-
----
-
 ## Contact & Support
 
-- **Course Email:** pritesh.patel2@georgebrown.ca
+- **Prof Email:** pritesh.patel2@georgebrown.ca
+- **My Email:** uzma.shaikh2@georgebrown.ca
 - **GitHub:** https://github.com/uzmashxxxikh
 - **Project Repository:** https://github.com/uzmashxxxikh/101504303_comp3123_labtest2
 
 ---
 
-## License
+📅 Submission Date: November 27, 2025
+⏰ Submission Deadline: 8:00 PM
+📊 Assignment Weight: 6% of final grade
 
-This project is created for educational purposes as part of the COMP3123 Lab Test 2 assignment.
 
 ---
 
