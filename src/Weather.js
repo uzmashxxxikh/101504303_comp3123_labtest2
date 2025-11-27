@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './Weather.css';
 import SearchBar from './SearchBar';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState('Toronto');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [searched, setSearched] = useState(false);
 
   // Replace with your actual API key
   const API_KEY = 'dda4786badf9261f94c39d23eb4e2c7c';
 
-  useEffect(() => {
-    fetchWeather(city);
-  }, []);
-
   const fetchWeather = async (cityName) => {
     setLoading(true);
     setError('');
+    setSearched(true);
     
     try {
       const response = await axios.get(
@@ -34,12 +31,19 @@ function Weather() {
   };
 
   const handleSearch = (searchCity) => {
-    setCity(searchCity);
     fetchWeather(searchCity);
   };
 
   if (loading) {
-    return <div className="loading">Loading...</div>;
+    return (
+      <div className="weather-container">
+        <div className="weather-card">
+          <h1 className="app-title">Weather App</h1>
+          <SearchBar onSearch={handleSearch} />
+          <div className="loading">Loading weather data...</div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -51,7 +55,14 @@ function Weather() {
         
         {error && <p className="error-message">{error}</p>}
         
-        {weatherData && (
+        {!searched && !weatherData && (
+          <div className="welcome-message">
+                <p className="welcome-text">☀️ Ready to Check the Weather?</p>
+                <p className="welcome-subtext">Type a city name above and click search</p>
+          </div>
+        )}
+        
+        {weatherData && !error && (
           <div className="weather-info">
             <div className="location">
               <h2>{weatherData.name}, {weatherData.sys.country}</h2>
