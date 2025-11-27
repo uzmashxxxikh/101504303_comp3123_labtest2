@@ -62,11 +62,6 @@ The application displaying the default city **Toronto, CA** with current weather
 
 **Home Page Features:**
 - Clean, modern UI design
-- Weather icon displaying snow condition
-- Temperature: 1°C
-- Weather description: Light Snow
-- Detailed metrics in grid layout
-- Search bar at the top
 
 ---
 
