@@ -44,7 +44,7 @@ This is a React-based weather application that displays current weather informat
 ### 1. GitHub Repository Overview
 The project repository showing the complete file structure with all React components, configuration files, and README documentation. The repository includes proper commit history with descriptive messages.
 
-![GitHub Repository](Github_repo.png)
+![GitHub Repository](screenshots/Github_repo.png)
 
 **Repository Contents:**
 - `src/` folder with Weather.js, SearchBar.js components
@@ -58,7 +58,7 @@ The project repository showing the complete file structure with all React compon
 ### 2. Application Home Page (Default View)
 The application displaying the default city **Toronto, CA** with current weather conditions showing **1°C** with **Light Snow**. The interface features a clean purple gradient background with a white card layout.
 
-![Home Page - Toronto](Home.png)
+![Home Page - Toronto](screenshots/HomePage.png)
 
 **Home Page Features:**
 - Clean, modern UI design
@@ -68,7 +68,7 @@ The application displaying the default city **Toronto, CA** with current weather
 ### 3. Error Handling Display
 Demonstrating the application's error handling when an invalid city name is entered. The app displays a user-friendly error message: **"City not found. Please try again."** in a red notification box.
 
-![Home Page - Toronto](Home.png)
+![Home Page - Toronto](screenshots/Error.png)
 
 **Error Handling Features:**
 - Clear error message
@@ -82,7 +82,7 @@ Demonstrating the application's error handling when an invalid city name is ente
 ### 4. Weather Display - New York
 Successfully displaying real-time weather information for **New York, US** with detailed metrics.
 
-![Weather Display - New York](NewYork.png)
+![Weather Display - New York](screenshots/NewYork.png)
 
 **Weather Information Shown:**
 - **Location:** New York, US
@@ -98,7 +98,7 @@ Successfully displaying real-time weather information for **New York, US** with 
 ### 5. Weather Display - Seattle
 Displaying current weather for **Seattle, US** showing **10°C** with **Overcast Clouds**.
 
-![Weather Display - Seattle](Seattle.png)
+![Weather Display - Seattle](screenshots/Seattle.png)
 
 **Seattle Weather Details:**
 - **Temperature:** 10°C
@@ -113,7 +113,7 @@ Displaying current weather for **Seattle, US** showing **10°C** with **Overcast
 ### 6. Weather Display - Toronto (Detailed View)
 Another view of Toronto weather showing different conditions with **1°C** and **Light Snow**.
 
-![Weather Display - Toronto Detailed](Toronto.png)
+![Weather Display - Toronto Detailed](screenshots/Toronto.png)
 
 **Toronto Weather Details:**
 - **Temperature:** 1°C
@@ -129,7 +129,7 @@ Another view of Toronto weather showing different conditions with **1°C** and *
 ### 7. Postman API Testing - Toronto
 Testing the OpenWeatherMap API endpoint for **Toronto** using Postman. The response shows successful data retrieval with **200 OK** status.
 
-![Postman API Test - Toronto](Postman_Toronto.png)
+![Postman API Test - Toronto](screenshots/Postman_Toronto.png)
 
 **API Request Details:**
 - **Method:** GET
@@ -154,7 +154,7 @@ Testing the OpenWeatherMap API endpoint for **Toronto** using Postman. The respo
 ### 8. Postman API Testing - London
 Testing the API with **London** as the query parameter, showing successful response with overcast clouds weather data.
 
-![Postman API Test - London](Postman_London.png)
+![Postman API Test - London](screenshots/Postman_London.png)
 
 **London API Test Details:**
 - **City:** London
@@ -169,7 +169,7 @@ Testing the API with **London** as the query parameter, showing successful respo
 ### 9. Postman API Testing - Paris
 Testing the API with **Paris** showing successful weather data retrieval with overcast clouds.
 
-![Postman API Test - Paris](Postman_Paris.png)
+![Postman API Test - Paris](screenshots/Postman_Paris.png)
 
 **Paris API Test Details:**
 - **City:** Paris
